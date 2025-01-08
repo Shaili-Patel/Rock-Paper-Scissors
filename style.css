@@ -16,13 +16,48 @@ font-style: normal;
 }
 
 .rock{
-    color: red;
+    background-color: red;
+    font-family: "pf-uniform", sans-serif;
+font-weight: 400;
+font-style: normal;
+font-size: 30px;
+}
+
+button.rock:hover{
+background-color: blue;
+color: white;
 }
 
 .paper{
-    color: red;
+    background-color: red;
+    font-family: "pf-uniform", sans-serif;
+font-weight: 400;
+font-style: normal;
+font-size: 30px;
 }
 
+button.paper:hover{
+    background-color: blue;
+    color: white;
+    }
+
 .scissors{
-    color: red;
+    background-color: red;
+    font-family: "pf-uniform", sans-serif;
+font-weight: 400;
+font-style: normal;
+font-size: 30px;
+}
+
+button.scissors:hover{
+    background-color: blue;
+    color: white;
+    }
+
+.buttons{
+    margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
