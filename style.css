@@ -1,0 +1,28 @@
+body{
+    background-color: black;
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+
+}
+
+h2{
+    color: white;
+    text-align: center;
+    font-size: 65px;
+    font-family: "pf-uniform", sans-serif;
+font-weight: 400;
+font-style: normal;
+}
+
+.rock{
+    color: red;
+}
+
+.paper{
+    color: red;
+}
+
+.scissors{
+    color: red;
+}
