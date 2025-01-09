@@ -20,16 +20,34 @@
     </header>
     <main>
 
+        <div class="deconstructed">
+
+            <div>WELCOME TO ROCK PAPER SCISSORS</div>
+            <div>WELCOME TO ROCK PAPER SCISSORS</div>
+            <div>WELCOME TO ROCK PAPER SCISSORS</div>
+            <div>WELCOME TO ROCK PAPER SCISSORS</div>
+            <div>WELCOME TO ROCK PAPER SCISSORS</div>
+        </div>
+
         <!-- JS Title Starts -->
         <div id="title"></div>
         <!-- JS Title Ends -->
 
-        <div class="buttons">
-            <button class="rock">Rock</button>
-            <button class="paper">Paper</button>
-            <button class="scissors">Scissors</button>
+
+        <div class="buttons" id="choices">
+            <button onclick="playGame('rock')" class="rock">Rock</button>
+            <button onclick="playGame('rock')" class="paper">Paper</button>
+            <button onclick="playGame('rock')" class="scissors">Scissors</button>
         </div>
 
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4" id="playerDisplay">Player:</div>
+                <div class="col-lg-4" id="computerDisplay">Computer:</div>
+                <div class="col-lg-4" id="resultDisplay">It's a tie!</div>
+            </div>
+        </div>
 
     </main>
     <footer>
