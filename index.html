@@ -36,17 +36,25 @@
 
         <div class="buttons" id="choices">
             <button onclick="playGame('rock')" class="rock">Rock</button>
-            <button onclick="playGame('rock')" class="paper">Paper</button>
-            <button onclick="playGame('rock')" class="scissors">Scissors</button>
+            <button onclick="playGame('paper')" class="paper">Paper</button>
+            <button onclick="playGame('scissors')" class="scissors">Scissors</button>
         </div>
 
 
         <div class="container">
             <div class="row">
-                <div class="col-lg-4" id="playerDisplay">Player:</div>
-                <div class="col-lg-4" id="computerDisplay">Computer:</div>
-                <div class="col-lg-4" id="resultDisplay">It's a tie!</div>
+                <div id="playerDisplay">Player:</div>
+                <div id="computerDisplay">Computer:</div>
+                <div id="resultDisplay">It's a tie!</div>
             </div>
+        </div>
+
+        <div class="scoreDisplay">Player Score:
+            <span id="playerScoreDisplay">0</span>
+        </div>
+
+        <div class="scoreDisplay">Computer Score:
+            <span id="computerScoreDisplay">0</span>
         </div>
 
     </main>

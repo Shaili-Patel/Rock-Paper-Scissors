@@ -4,6 +4,9 @@ body{
     padding-left: 30px;
     padding-right: 30px;
     align-items: center;
+    display: felx;
+    flex-direction: column;
+    margin: 0;
 }
 
 h2{
@@ -175,4 +178,22 @@ font-style: normal;
     100% {
       transform: translateX(-135%);
     }
+  }
+
+  .scoreDisplay{
+    font-size: 2rem;
+  }
+
+  .greenText, #playerScoreDisplay{
+color: blue;
+  }
+
+  .redText, #computerScoreDisplay{
+    color: red;
+  }
+
+  .scoreDisplay{
+    color: white;
+    align-content: center;
+    font-weight: bold;
   }
