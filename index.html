@@ -33,29 +33,46 @@
         <div id="title"></div>
         <!-- JS Title Ends -->
 
-
-        <div class="buttons" id="choices">
-            <button onclick="playGame('rock')" class="rock">Rock</button>
-            <button onclick="playGame('paper')" class="paper">Paper</button>
-            <button onclick="playGame('scissors')" class="scissors">Scissors</button>
-        </div>
-
-
         <div class="container">
-            <div class="row">
-                <div id="playerDisplay">Player:</div>
-                <div id="computerDisplay">Computer:</div>
-                <div id="resultDisplay">It's a tie!</div>
+            <div class="row col-12">
+                <div class="buttons" id="choices">
+                    <button onclick="playGame('rock')" class="rock">Rock</button>
+                    <button onclick="playGame('paper')" class="paper">Paper</button>
+                    <button onclick="playGame('scissors')" class="scissors">Scissors</button>
+                </div>
+
+                <div class="container">
+                    <div class="row">
+                        <div class="display" id="playerDisplay">Player:</div>
+                        <div class="display" id="computerDisplay">Computer:</div>
+                        <div class="display" id="resultDisplay">It's a tie!</div>
+                    </div>
+                </div>
+
+                <div class="scoreDisplay">Player Score:
+                    <span id="playerScoreDisplay">0</span>
+                </div>
+
+                <div class="scoreDisplay">Computer Score:
+                    <span id="computerScoreDisplay">0</span>
+                </div>
             </div>
         </div>
 
-        <div class="scoreDisplay">Player Score:
-            <span id="playerScoreDisplay">0</span>
+        <div id="welcome-popup" class="popup">
+            <div class="popup-content">
+                <h2>Instructions</h2>
+                <p>Follow these steps to navigate the website:</p>
+                <ul>
+                    <li>Make Your Selection: Choose Rock, Paper, or Scissors</li>
+                    <li>Reveal Your Choices: Show Your Hand at the Same Time</li>
+                    <li>Evaluate the Outcome: Determine Who Wins</li>
+                </ul>
+                <button id="close-popup">Got it!</button>
+            </div>
         </div>
 
-        <div class="scoreDisplay">Computer Score:
-            <span id="computerScoreDisplay">0</span>
-        </div>
+
 
     </main>
     <footer>

@@ -1,4 +1,3 @@
-
 let userName = prompt('What is your name?')
 userName = userName.charAt(0).toUpperCase() + userName.slice(1);
 //End Prompts
@@ -13,6 +12,19 @@ console.log(myTitle);
 document.getElementById('title').innerHTML = myTitle;
 
 //Console logging Complete
+
+// Wait for the DOM to fully load before executing
+document.addEventListener("DOMContentLoaded", function () {
+  // Get the popup and the close button elements
+  const popup = document.getElementById("welcome-popup");
+  const closeBtn = document.getElementById("close-popup");
+
+  // Event listener for closing the popup
+  closeBtn.addEventListener("click", function () {
+      popup.style.display = "none"; // Hide the popup
+  });
+});
+
 
 const choices = ["rock", "paper", "scissors"];   
 const playerDisplay = document.getElementById("playerDisplay");
@@ -50,7 +62,7 @@ case "rock":
 
 resultDisplay.classList.remove("greenText", "redText");
 
-playerDisplay.textContent = `PLAYER: ${playerChoice}`;
+playerDisplay.textContent = `Player: ${playerChoice}`;
 computerDisplay.textContent = `Computer: ${computerChoice}`;
 resultDisplay.textContent = result;
 
@@ -67,3 +79,4 @@ case "YOU WIN!":
   break;
 }
 }
+
