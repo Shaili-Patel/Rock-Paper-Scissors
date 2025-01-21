@@ -9,6 +9,10 @@ body{
     margin: 0;
 }
 
+.container{
+  align-content: center;
+}
+
 h2{
     color: white;
     text-align: center;
@@ -23,6 +27,9 @@ div{
     color: white;
 }
 
+.li{
+  padding-bottom: 10px;
+}
 
 .rock{
     background-color: red;
@@ -219,16 +226,14 @@ color: blue;
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    background: rgba(0, 0, 0, 0.7);
     z-index: 1000;
 }
 
 .popup-content {
-    /* background-color: white; */
-    padding: 20px;
     border-radius: 10px;
     text-align: center;
-    max-width: 500px;
+    max-width: 600px;
     width: 80%;
 }
 
@@ -242,15 +247,12 @@ color: blue;
 }
 
 .popup ul li {
-    margin: 10px 0;
     font-size: 1.1em;
 }
 
 #close-popup {
     background-color: red;
-    /* color: white; */
     border: none;
-    padding: 10px 20px;
     cursor: pointer;
     font-size: 1em;
     background-color: red;
