@@ -4,14 +4,9 @@ body{
     padding-left: 30px;
     padding-right: 30px;
     align-items: center;
-    display: felx;
-    flex-direction: column;
     margin: 0;
 }
 
-.container{
-  align-content: center;
-}
 
 h2{
     color: white;
@@ -73,11 +68,8 @@ button.scissors:hover{
     }
 
 .buttons{
-    margin: 0;
-  position: absolute;
-  top: 50%;
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
+align-items: center;
+  margin-top: 30%;
 }
 
 .deconstructed {
@@ -201,16 +193,39 @@ color: blue;
     color: red;
   }
 
-  .scoreDisplay{
-    font-size: 35px;
+  .scoreDisplay1{
+    font-size: 45px;
     font-family: "lores-12", sans-serif;
     font-weight: 400;
     font-style: normal;
     font-weight: bold;
+    /* margin-left: 160px; */
+    /* margin-top: 90px; */
+  }
+
+  .scoreDisplay2{
+    font-size: 45px;
+    font-family: "lores-12", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-weight: bold;
+    /* margin-left: 1300px; */
+  }
+
+  .container3{
+    position: fixed;
+    transform: translateX(-50%);
+    top: 50%;
+    width: 100%;
+    left: 50%;
+  }
+
+  .container3 .col-6{
+    text-align: center;
   }
 
   .display{
-    font-size: 35px;
+    font-size: 45px;
     font-family: "lores-12", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -265,3 +280,8 @@ font-size: 30px;
 #close-popup:hover {
     background-color: blue;
 }
+
+.container{
+  text-align: center;
+}
+
