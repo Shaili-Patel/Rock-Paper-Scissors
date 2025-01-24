@@ -5,6 +5,7 @@ body{
     padding-right: 30px;
     align-items: center;
     margin: 0;
+    padding-bottom: 100px;
 }
 
 
@@ -25,6 +26,23 @@ div{
 .li{
   padding-bottom: 10px;
 }
+
+.image-container {
+  display: flex;
+  justify-content: space-between; /* Ensures both images are on opposite sides */
+  width: 100%; /* Makes sure the container spans the full width */
+}
+
+.gif1 {
+  margin-left: 0px;
+}
+
+.gif2 {
+  margin-top: -30px; /* Move the second image higher */
+}
+
+
+
 
 .rock{
     background-color: red;
@@ -69,7 +87,7 @@ button.scissors:hover{
 
 .buttons{
 align-items: center;
-  margin-top: 30%;
+  margin-top: 13%;
 }
 
 .deconstructed {
@@ -213,9 +231,9 @@ color: blue;
   }
 
   .container3{
-    position: fixed;
+    position: absolute;
     transform: translateX(-50%);
-    top: 50%;
+    top: 70%;
     width: 100%;
     left: 50%;
   }
