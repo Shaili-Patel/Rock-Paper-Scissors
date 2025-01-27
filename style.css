@@ -1,36 +1,35 @@
-body{
-    background-image: url(imgs/Stars.png);
-    padding-top: 30px;
-    padding-left: 30px;
-    padding-right: 30px;
-    align-items: center;
-    margin: 0;
-    padding-bottom: 100px;
+body {
+  background-image: url(imgs/Stars.png);
+  padding-top: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+  align-items: center;
+  margin: 0;
+  padding-bottom: 100px;
 }
 
-
-h2{
-    color: white;
-    text-align: center;
-    font-size: 65px;
-    font-family: "pf-uniform", sans-serif;
-font-weight: 400;
-font-style: normal;
-padding-top: 30px;
+h2 {
+  color: white;
+  text-align: center;
+  font-size: 65px;
+  font-family: "pf-uniform", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  padding-top: 30px;
 }
 
-div{
-    color: white;
+div {
+  color: white;
 }
 
-.li{
+.li {
   padding-bottom: 10px;
 }
 
 .image-container {
   display: flex;
-  justify-content: space-between; /* Ensures both images are on opposite sides */
-  width: 100%; /* Makes sure the container spans the full width */
+  justify-content: space-between;
+  width: 100%;
 }
 
 .gif1 {
@@ -38,268 +37,283 @@ div{
 }
 
 .gif2 {
-  margin-top: -30px; /* Move the second image higher */
+  margin-top: -30px;
 }
 
-
-
-
-.rock{
-    background-color: red;
-    font-family: "pf-uniform", sans-serif;
-font-weight: 400;
-font-style: normal;
-font-size: 30px;
-text-align: center;
+.rock {
+  background-color: red;
+  font-family: "pf-uniform", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 30px;
+  text-align: center;
 }
 
-button.rock:hover{
-background-color: blue;
-color: white;
-text-align: center;
+button.rock:hover {
+  background-color: blue;
+  color: white;
+  text-align: center;
 }
 
-.paper{
-    background-color: red;
-    font-family: "pf-uniform", sans-serif;
-font-weight: 400;
-font-style: normal;
-font-size: 30px;
+.paper {
+  background-color: red;
+  font-family: "pf-uniform", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 30px;
 }
 
-button.paper:hover{
-    background-color: blue;
-    color: white;
-    }
-
-.scissors{
-    background-color: red;
-    font-family: "pf-uniform", sans-serif;
-font-weight: 400;
-font-style: normal;
-font-size: 30px;
+button.paper:hover {
+  background-color: blue;
+  color: white;
 }
 
-button.scissors:hover{
-    background-color: blue;
-    color: white;
-    }
+.scissors {
+  background-color: red;
+  font-family: "pf-uniform", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 30px;
+}
 
-.buttons{
-align-items: center;
+button.scissors:hover {
+  background-color: blue;
+  color: white;
+}
+
+.buttons {
+  align-items: center;
   margin-top: 13%;
 }
 
 .deconstructed {
-    position: relative;
-    margin: auto;
-    height: 0.71em;
-    color: transparent;
-    font-size: 70px;
-    letter-spacing: -0.02em;
-    line-height: 1.03em;
-    color: white;
-    text-align: center;
-    font-family: "pf-uniform", sans-serif;
-font-weight: 400;
-font-style: normal;
-  }
-  
-  .deconstructed > div {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    color: white;
-    pointer-events: none;
-  }
-  
-  .deconstructed > div:nth-child(1) {
-    -webkit-mask-image: linear-gradient(black 25%, transparent 25%);
-    mask-image: linear-gradient(black 25%, transparent 25%);
-    animation: deconstructed1 15s infinite;
-  }
-  
-  .deconstructed > div:nth-child(2) {
-    -webkit-mask-image: linear-gradient(transparent 25%, black 25%, black 50%, transparent 50%);
-    mask-image: linear-gradient(transparent 25%, black 25%, black 50%, transparent 50%);
-    animation: deconstructed2 15s infinite;
-  }
-  
-  .deconstructed > div:nth-child(3) {
-     -webkit-mask-image: linear-gradient(transparent 50%, black 50%, black 75%, transparent 75%);
-    mask-image: linear-gradient(transparent 50%, black 50%, black 75%, transparent 75%);
-    animation: deconstructed3 15s infinite;
-  }
-  
-  .deconstructed > div:nth-child(4) {
-     -webkit-mask-image: linear-gradient(transparent 75%, black 75%);
-    mask-image: linear-gradient(transparent 75%, black 75%);
-    animation: deconstructed4 15s infinite;
-  }
-  
-  @keyframes deconstructed1 {
-    0% {
-      transform: translateX(100%);
-    }
-    26% {
-      transform: translateX(0%);
-    }
-    83% {
-      transform: translateX(-0.1%);
-    }
-    100% {
-      transform: translateX(-120%);
-    }
-  }
-  
-  @keyframes deconstructed2 {
-    0% {
-      transform: translateX(100%);
-    }
-    24% {
-      transform: translateX(0.5%);
-    }
-    82% {
-      transform: translateX(-0.2%);
-    }
-    100% {
-      transform: translateX(-125%);
-    }
-  }
-  
-  @keyframes deconstructed3 {
-    0% {
-      transform: translateX(100%);
-    }
-    22% {
-      transform: translateX(0%);
-    }
-    81% {
-      transform: translateX(0%);
-    }
-    100% {
-      transform: translateX(-130%);
-    }
-  }
-  
-  @keyframes deconstructed4 {
-    0% {
-      transform: translateX(100%);
-    }
-    20% {
-      transform: translateX(0%);
-    }
-    80% {
-      transform: translateX(0%);
-    }
-    100% {
-      transform: translateX(-135%);
-    }
-  }
-
-  .scoreDisplay{
-    font-size: 2rem;
-  }
-
-  .greenText, #playerScoreDisplay{
-color: blue;
-  }
-
-  .redText, #computerScoreDisplay{
-    color: red;
-  }
-
-  .scoreDisplay1{
-    font-size: 45px;
-    font-family: "lores-12", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-weight: bold;
-    /* margin-left: 160px; */
-    /* margin-top: 90px; */
-  }
-
-  .scoreDisplay2{
-    font-size: 45px;
-    font-family: "lores-12", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-weight: bold;
-    /* margin-left: 1300px; */
-  }
-
-  .container3{
-    position: absolute;
-    transform: translateX(-50%);
-    top: 70%;
-    width: 100%;
-    left: 50%;
-  }
-
-  .container3 .col-6{
-    text-align: center;
-  }
-
-  .display{
-    font-size: 45px;
-    font-family: "lores-12", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-weight: bold;
-  }
-
-  .popup {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.7);
-    z-index: 1000;
+  position: relative;
+  margin: auto;
+  height: 0.71em;
+  color: transparent;
+  font-size: 70px;
+  letter-spacing: -0.02em;
+  line-height: 1.03em;
+  color: white;
+  text-align: center;
+  font-family: "pf-uniform", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
-.popup-content {
-    border-radius: 10px;
-    text-align: center;
-    max-width: 600px;
-    width: 80%;
+.deconstructed > div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  color: white;
+  pointer-events: none;
 }
 
-.popup h2 {
-    color: white;
+.deconstructed > div:nth-child(1) {
+  -webkit-mask-image: linear-gradient(black 25%, transparent 25%);
+  mask-image: linear-gradient(black 25%, transparent 25%);
+  animation: deconstructed1 15s infinite;
 }
 
-.popup ul {
-    list-style-type: none;
-    padding: 0;
+.deconstructed > div:nth-child(2) {
+  -webkit-mask-image: linear-gradient(
+    transparent 25%,
+    black 25%,
+    black 50%,
+    transparent 50%
+  );
+  mask-image: linear-gradient(
+    transparent 25%,
+    black 25%,
+    black 50%,
+    transparent 50%
+  );
+  animation: deconstructed2 15s infinite;
 }
 
-.popup ul li {
-    font-size: 1.1em;
+.deconstructed > div:nth-child(3) {
+  -webkit-mask-image: linear-gradient(
+    transparent 50%,
+    black 50%,
+    black 75%,
+    transparent 75%
+  );
+  mask-image: linear-gradient(
+    transparent 50%,
+    black 50%,
+    black 75%,
+    transparent 75%
+  );
+  animation: deconstructed3 15s infinite;
 }
 
-#close-popup {
-    background-color: red;
-    border: none;
-    cursor: pointer;
-    font-size: 1em;
-    background-color: red;
-    font-family: "pf-uniform", sans-serif;
-font-weight: 400;
-font-style: normal;
-font-size: 30px;
+.deconstructed > div:nth-child(4) {
+  -webkit-mask-image: linear-gradient(transparent 75%, black 75%);
+  mask-image: linear-gradient(transparent 75%, black 75%);
+  animation: deconstructed4 15s infinite;
 }
 
-#close-popup:hover {
-    background-color: blue;
+@keyframes deconstructed1 {
+  0% {
+    transform: translateX(100%);
+  }
+  26% {
+    transform: translateX(0%);
+  }
+  83% {
+    transform: translateX(-0.1%);
+  }
+  100% {
+    transform: translateX(-120%);
+  }
 }
 
-.container{
+@keyframes deconstructed2 {
+  0% {
+    transform: translateX(100%);
+  }
+  24% {
+    transform: translateX(0.5%);
+  }
+  82% {
+    transform: translateX(-0.2%);
+  }
+  100% {
+    transform: translateX(-125%);
+  }
+}
+
+@keyframes deconstructed3 {
+  0% {
+    transform: translateX(100%);
+  }
+  22% {
+    transform: translateX(0%);
+  }
+  81% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-130%);
+  }
+}
+
+@keyframes deconstructed4 {
+  0% {
+    transform: translateX(100%);
+  }
+  20% {
+    transform: translateX(0%);
+  }
+  80% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-135%);
+  }
+}
+
+.scoreDisplay {
+  font-size: 2rem;
+}
+
+.greenText,
+#playerScoreDisplay {
+  color: blue;
+}
+
+.redText,
+#computerScoreDisplay {
+  color: red;
+}
+
+.scoreDisplay1 {
+  font-size: 45px;
+  font-family: "lores-12", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-weight: bold;
+}
+
+.scoreDisplay2 {
+  font-size: 45px;
+  font-family: "lores-12", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-weight: bold;
+}
+
+.container3 {
+  position: absolute;
+  transform: translateX(-50%);
+  top: 70%;
+  width: 100%;
+  left: 50%;
+}
+
+.container3 .col-6 {
   text-align: center;
 }
 
+.display {
+  font-size: 45px;
+  font-family: "lores-12", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-weight: bold;
+}
+
+.popup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 1000;
+}
+
+.popup-content {
+  border-radius: 10px;
+  text-align: center;
+  max-width: 600px;
+  width: 80%;
+}
+
+.popup h2 {
+  color: white;
+}
+
+.popup ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.popup ul li {
+  font-size: 1.1em;
+}
+
+#close-popup {
+  background-color: red;
+  border: none;
+  cursor: pointer;
+  font-size: 1em;
+  background-color: red;
+  font-family: "pf-uniform", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 30px;
+}
+
+#close-popup:hover {
+  background-color: blue;
+}
+
+.container {
+  text-align: center;
+}
